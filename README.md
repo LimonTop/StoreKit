@@ -41,3 +41,4 @@ For more information about how to use CocoaPods, I suggest [this tutorial](http:
 ## License
 
 `StoreKit` is released under an [MIT License][mitLink]. See `LICENSE` for details.
+[mitLink]:http://opensource.org/licenses/MIT
