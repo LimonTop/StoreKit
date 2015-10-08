@@ -71,20 +71,9 @@ public class FetchRequest <T: NSManagedObject>: NSFetchRequest {
     - parameter context: The context to use that creates an entity description object from the type of NSManagedObject.
     - returns: A new `FetchRequest` instance.
     */
-    public convenience init(context: NSManagedObjectContext) {
+    public init(context: NSManagedObjectContext) {
         let entityName = T.entityName
         let entity = NSEntityDescription.entityForName(entityName, inManagedObjectContext: context)!
-        self.init(entity: entity)
-    }
-    
-    /**
-    Constructs a new `FetchRequest` instance.
-
-    - parameter entity: The entity description for the entities that this request fetches.
-
-    - returns: A new `FetchRequest` instance.
-    */
-    public init(entity: NSEntityDescription) {
         super.init()
         self.entity = entity
     }
