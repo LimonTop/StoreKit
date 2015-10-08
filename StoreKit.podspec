@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.summary     = "CoreData management library written in Swift."
 
   s.description = <<-DESC
-                   CoreData management library written in Swift
+                   StoreKit is a CoreData management library written in Swift. StoreKit help you to use CoreData.
                    DESC
 
   s.homepage    = "https://github.com/LimonTop/StoreKit"
